@@ -1,8 +1,10 @@
 package com.pjht.ssspcore;
 
+import com.pjht.ssspcore.block.ModBlocks;
 import com.pjht.ssspcore.item.ModItems;
 import com.pjht.ssspcore.proxy.CommonProxy;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -45,11 +47,18 @@ public class SSSPCore {
 		@SubscribeEvent
 		public static void registerItems(RegistryEvent.Register<Item> event) {
 			ModItems.register(event.getRegistry());
+			ModBlocks.registerItemBlocks(event.getRegistry());
 		}
 		
 		@SubscribeEvent
 		public static void registerItems(ModelRegistryEvent event) {
 			ModItems.registerModels();
+			ModBlocks.registerItemModels();
+		}
+		
+		@SubscribeEvent
+		public static void registerBlocks(RegistryEvent.Register<Block> event) {
+			ModBlocks.register(event.getRegistry());
 		}
 	}
 	
