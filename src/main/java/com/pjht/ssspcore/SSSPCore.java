@@ -27,6 +27,8 @@ public class SSSPCore {
 	@SidedProxy(serverSide = "com.pjht.ssspcore.proxy.CommonProxy", clientSide = "com.pjht.ssspcore.proxy.ClientProxy")
 	public static CommonProxy proxy;
 	
+	public static final SSSPCoreTab creativeTab = new SSSPCoreTab();
+	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println(name + " is loading!");

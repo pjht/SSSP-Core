@@ -1,12 +1,11 @@
 package com.pjht.ssspcore.block;
 
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
-	public static BlockOre oreCopper = new BlockOre("ore_copper").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockOre oreCopper = new BlockOre("ore_copper");
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		registry.registerAll(
