@@ -36,7 +36,7 @@ public class SSSPCore {
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		
+		ModRecipes.init();
 	}
 
 	@Mod.EventHandler
