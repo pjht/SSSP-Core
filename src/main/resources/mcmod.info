@@ -1,0 +1,16 @@
+[
+{
+  "modid": "sssp-core",
+  "name": "SSSP core mod",
+  "description": "Core mod for SSSP.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Peter"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
