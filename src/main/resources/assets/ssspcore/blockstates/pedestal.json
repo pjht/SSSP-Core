@@ -1,0 +1,12 @@
+{
+	"forge_marker": 1,
+	"variants": {
+		"normal": {
+			"model": "ssspcore:pedestal"
+		},
+		"inventory": {
+			"model": "ssspcore:pedestal",
+			"transform": "forge:default-block"
+		}
+	}
+}
