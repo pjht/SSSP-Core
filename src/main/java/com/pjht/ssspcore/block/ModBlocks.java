@@ -5,7 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
-	public static BlockOre oreCopper = new BlockOre("ore_copper");
+	public static BlockOre oreCopper = new BlockOre("ore_copper","oreCopper");
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		registry.registerAll(

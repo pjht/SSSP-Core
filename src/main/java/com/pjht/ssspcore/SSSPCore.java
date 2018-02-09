@@ -36,6 +36,8 @@ public class SSSPCore {
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
+		ModBlocks.oreCopper.initOreDict();
+		ModItems.ingotCopper.initOreDict();
 		ModRecipes.init();
 	}
 
