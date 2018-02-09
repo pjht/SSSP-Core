@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = SSSPCore.modId, name = SSSPCore.name, version = SSSPCore.version)
 public class SSSPCore {
-	public static final String modId = "sssp-core";
+	public static final String modId = "ssspcore";
 	public static final String name = "SSSP core mod";
 	public static final String version = "1.0.0";
 
