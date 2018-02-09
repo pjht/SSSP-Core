@@ -1,6 +1,6 @@
 [
 {
-  "modid": "sssp-core",
+  "modid": "ssspcore",
   "name": "SSSP core mod",
   "description": "Core mod for SSSP.",
   "version": "${version}",
