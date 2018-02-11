@@ -1,6 +1,7 @@
 package com.pjht.ssspcore.block;
 
 import com.pjht.ssspcore.block.te.counter.BlockCounter;
+import com.pjht.ssspcore.block.te.pedestal.BlockPedestal;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -18,6 +19,7 @@ public class ModBlocks {
 				pedestal
 		);
 	GameRegistry.registerTileEntity(counter.getTileEntityClass(), counter.getRegistryName().toString());
+	GameRegistry.registerTileEntity(pedestal.getTileEntityClass(), pedestal.getRegistryName().toString());
 	}
 	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
 		registry.registerAll(

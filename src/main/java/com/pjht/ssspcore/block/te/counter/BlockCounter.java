@@ -2,7 +2,7 @@ package com.pjht.ssspcore.block.te.counter;
 
 import javax.annotation.Nullable;
 
-import com.pjht.ssspcore.block.BlockTileEntity;
+import com.pjht.ssspcore.block.te.BlockTileEntity;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

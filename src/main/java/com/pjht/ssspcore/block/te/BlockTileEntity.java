@@ -1,4 +1,4 @@
-package com.pjht.ssspcore.block;
+package com.pjht.ssspcore.block.te;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -8,6 +8,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
+
+import com.pjht.ssspcore.block.BlockBase;
 
 public abstract class BlockTileEntity<TE extends TileEntity> extends BlockBase {
 
