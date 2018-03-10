@@ -18,20 +18,17 @@ public class ModBlocks {
 				oreCopper,
 				pedestal
 		);
-	GameRegistry.registerTileEntity(counter.getTileEntityClass(), counter.getRegistryName().toString());
 	GameRegistry.registerTileEntity(pedestal.getTileEntityClass(), pedestal.getRegistryName().toString());
 	}
 	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
 		registry.registerAll(
 				oreCopper.createItemBlock(),
-				pedestal.createItemBlock(),
-				counter.createItemBlock()
+				pedestal.createItemBlock()
 		);
 	}
 	
 	public static void registerItemModels() {
 		oreCopper.registerItemModel(Item.getItemFromBlock(oreCopper));
 		pedestal.registerItemModel(Item.getItemFromBlock(pedestal));
-		counter.registerItemModel(Item.getItemFromBlock(counter));
 	}
 }
