@@ -1,6 +1,7 @@
 # Items
 item.ingot_copper.name=Copper Ingot
 item.raw_silicon.name=Raw Silicon
+item.silicon_wafer.name=Silicon Wafer
 item.coke.name=Coke
 
 # Blocks
