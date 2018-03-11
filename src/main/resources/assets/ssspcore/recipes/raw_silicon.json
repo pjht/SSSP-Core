@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:sand",
+			"data": 0
+		},
+		{
+			"item": "ssspcore:coke"
+		}
+	],
+	"result": {
+		"item": "ssspcore:raw_silicon",
+		"count": 2
+	}
+}
