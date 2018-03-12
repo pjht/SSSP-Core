@@ -24,4 +24,11 @@ public class ItemBase extends Item {
 		super.setCreativeTab(tab);
 		return this;
 	}
+	
+	public Boolean isOredict() {
+		return false;
+	}
+
+	public void initOreDict() {
+	}
 }

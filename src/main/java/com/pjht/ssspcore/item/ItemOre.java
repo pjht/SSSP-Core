@@ -16,4 +16,8 @@ public class ItemOre extends ItemBase {
 		OreDictionary.registerOre(oreName, this);
 	}
 
+	@Override
+	public Boolean isOredict() {
+		return true;
+	}
 }

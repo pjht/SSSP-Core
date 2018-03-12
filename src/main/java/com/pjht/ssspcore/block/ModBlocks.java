@@ -1,34 +1,63 @@
 package com.pjht.ssspcore.block;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import com.pjht.ssspcore.block.te.BlockTileEntity;
 import com.pjht.ssspcore.block.te.counter.BlockCounter;
 import com.pjht.ssspcore.block.te.pedestal.BlockPedestal;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
-	public static BlockOre oreCopper = new BlockOre("ore_copper","oreCopper");
-	public static BlockPedestal pedestal = new BlockPedestal();
-	public static BlockCounter counter = new BlockCounter();
+	public static Map<String,BlockBase> blocks = new HashMap<String,BlockBase>();
+	
+	public static void init() {
+		registerOre("ore_copper","oreCopper");
+		registerTileEntity("pedestal", new BlockPedestal());
+	}
 	
 	public static void register(IForgeRegistry<Block> registry) {
-		registry.registerAll(
-				oreCopper,
-				pedestal
-		);
-	GameRegistry.registerTileEntity(pedestal.getTileEntityClass(), pedestal.getRegistryName().toString());
+		for (BlockBase block: blocks.values()) {
+			registry.register(block);
+			if (block.isTileEntity()) {
+				GameRegistry.registerTileEntity(block.getTileEntityClass(), block.getRegistryName().toString());
+			}
+		}
 	}
 	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
-		registry.registerAll(
-				oreCopper.createItemBlock(),
-				pedestal.createItemBlock()
-		);
+		for (BlockBase block: blocks.values()) {
+			registry.register(block.createItemBlock());
+		}
 	}
 	
 	public static void registerItemModels() {
-		oreCopper.registerItemModel(Item.getItemFromBlock(oreCopper));
-		pedestal.registerItemModel(Item.getItemFromBlock(pedestal));
+		for (BlockBase block: blocks.values()) {
+			block.registerItemModel(Item.getItemFromBlock(block));
+		}
+	}
+	
+	private static void registerBlock(Material material, String name) {
+		blocks.put(name,  new BlockBase(material, name));
+	}
+	
+	private static void registerOre(String name, String oredict) {
+		blocks.put(name, new BlockOre(name, oredict));
+	}
+	
+	private static void registerTileEntity(String name, BlockTileEntity te) {
+		blocks.put(name, te);
+	}
+
+	public static void initOreDict() {
+		for (BlockBase block: blocks.values()) {
+			if (block.isOredict()) {
+				block.initOreDict();
+			}
+		}
 	}
 }

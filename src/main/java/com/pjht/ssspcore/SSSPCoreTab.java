@@ -13,7 +13,7 @@ public class SSSPCoreTab extends CreativeTabs {
 
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(ModItems.ingotCopper);
+		return new ItemStack(ModItems.items.get("ingot_copper"));
 	}
 
 

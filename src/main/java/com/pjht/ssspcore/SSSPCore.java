@@ -33,12 +33,15 @@ public class SSSPCore {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println(name + " is loading!");
+		ModItems.init();
+		ModBlocks.init();
 	}
+	
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		ModBlocks.oreCopper.initOreDict();
-		ModItems.ingotCopper.initOreDict();
+		ModItems.initOreDict();
+		ModBlocks.initOreDict();
 		ModRecipes.init();
 	}
 

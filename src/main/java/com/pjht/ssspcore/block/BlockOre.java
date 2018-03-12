@@ -25,4 +25,9 @@ public class BlockOre extends BlockBase {
 		super.setCreativeTab(tab);
 		return this;
 	}
+	
+	@Override
+	public Boolean isOredict() {
+		return true;
+	}
 }

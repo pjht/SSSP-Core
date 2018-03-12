@@ -6,6 +6,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.tileentity.TileEntity;
 
 public class BlockBase extends Block {
 
@@ -35,4 +36,18 @@ public class BlockBase extends Block {
 		return this;
 	}
 
+	public Boolean isTileEntity() {
+		return false;
+	}
+
+	public Boolean isOredict() {
+		return false;
+	}
+	
+	public Class<? extends TileEntity> getTileEntityClass() {
+		return null;
+	}
+
+	public void initOreDict() {
+	}
 } 
