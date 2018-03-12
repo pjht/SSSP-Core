@@ -3,10 +3,18 @@ item.ingot_copper.name=Copper Ingot
 item.raw_silicon.name=Raw Silicon
 item.silicon_wafer.name=Silicon Wafer
 item.coke.name=Coke
+item.blank_blueprint.name=Blank Blueprint
+item.blank_chip.name=Blank Chip
+item.blueprint.name=Blueprint
+item.chip.name=Chip
+item.housing.name=Housing
+item.ic.name=IC
+item.plastic.name=Plastic
+item.blank_pcb.name=Blank PCB
 
 # Blocks
 tile.ore_copper.name=Copper Ore
 tile.pedestal.name=Pedestal
 
-#Creative Tabs
+#  Creative Tabs
 itemGroup.ssspcore=SSSP Core

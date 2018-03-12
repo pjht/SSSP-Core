@@ -15,6 +15,11 @@ public class ModItems {
 		registerOredict("ingot_copper", "ingotCopper");
 		registerOredict("raw_silicon","itemSilicon");
 		registerFuel("coke","itemCoke", 1000);
+		registerItem("blank_chip");
+		registerItem("blank_blueprint");
+		registerItem("plastic");
+		registerItem("housing");
+		registerItem("blank_pcb");
 	}
 	
 	public static void register(IForgeRegistry<Item> registry) {

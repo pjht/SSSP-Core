@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "ssspcore:ingot_copper"
+		}
+	],
+	"result": {
+		"item": "ssspcore:blank_pcb"
+	}
+}

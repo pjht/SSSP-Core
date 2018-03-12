@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{	
+			"item": "ssspcore:silicon_wafer"
+		}
+	],
+	"result": {
+		"item": "ssspcore:blank_chip",
+		"count": 5
+	}
+}
