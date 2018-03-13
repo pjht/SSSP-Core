@@ -20,6 +20,7 @@ public class ModItems {
 		registerItem("plastic");
 		registerItem("housing");
 		registerItem("blank_pcb");
+		registerItem("blank_pcb_blueprint");
 	}
 	
 	public static void register(IForgeRegistry<Item> registry) {

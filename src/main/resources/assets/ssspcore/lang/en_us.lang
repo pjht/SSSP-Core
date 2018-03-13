@@ -11,7 +11,7 @@ item.housing.name=Housing
 item.ic.name=IC
 item.plastic.name=Plastic
 item.blank_pcb.name=Blank PCB
-
+item.blank_pcb_blueprint.name=Blank PCB Blueprint
 # Blocks
 tile.ore_copper.name=Copper Ore
 tile.pedestal.name=Pedestal
