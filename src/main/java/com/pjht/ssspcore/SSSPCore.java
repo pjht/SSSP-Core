@@ -20,7 +20,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class SSSPCore {
 	public static final String modId = "ssspcore";
 	public static final String name = "SSSP core mod";
-	public static final String version = "1.0.0";
+	public static final String version = "0.1.0";
 
 	@Mod.Instance(modId)
 	public static SSSPCore instance;
