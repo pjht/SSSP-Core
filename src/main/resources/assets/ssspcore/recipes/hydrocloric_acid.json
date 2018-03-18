@@ -1,0 +1,18 @@
+{
+  "type":"minecraft:crafting_shapeless",
+  "ingredients":[
+    {
+      "item":"ssspcore:hydrogen_bottle"
+    },
+    {
+      "item":"ssspcore:clorine_bottle"
+    },
+    {
+      "item":"minecraft:potion",
+      "nbt":{"Potion":"minecraft:water"}
+    }
+    ],
+    "result":{
+      "item":"ssspcore:hydrocloric_acid"
+    }
+}

@@ -1,20 +1,23 @@
-# Items
 item.ingot_copper.name=Copper Ingot
 item.raw_silicon.name=Raw Silicon
 item.silicon_wafer.name=Silicon Wafer
 item.coke.name=Coke
-item.blank_blueprint.name=Blank Blueprint
 item.blank_chip.name=Blank Chip
-item.blueprint.name=Blueprint
-item.chip.name=Chip
+item.blank_blueprint.name=Blank Blueprint
 item.housing.name=Housing
 item.ic.name=IC
 item.plastic.name=Plastic
 item.blank_pcb.name=Blank PCB
 item.blank_pcb_blueprint.name=Blank PCB Blueprint
-# Blocks
 tile.ore_copper.name=Copper Ore
 tile.pedestal.name=Pedestal
-
-#  Creative Tabs
 itemGroup.ssspcore=SSSP Core
+item.phosphoric_acid.name=Phosphoric Acid Bottle
+item.salt.name=Salt
+item.boron.name=Boron
+item.brine_bucket.name=Brine Bucket
+item.hydrogen_bottle.name=Hydrogen Bottle
+item.clorine_bottle.name=Clorine Bottle
+item.hydrocloric_acid.name=Hydrocloric Acid Bottle
+item.boric_acid.name=Boric Acid
+item.ferric_acid.name=Ferric Acid Bottle

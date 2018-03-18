@@ -1,0 +1,18 @@
+{
+  "type":"minecraft:crafting_shapeless",
+  "ingredients":[
+    {
+      "item":"minecraft:iron_nugget"
+    },
+    {
+      "item":"ssspcore:clorine_bottle"
+    },
+    {
+      "item":"minecraft:potion",
+      "nbt":{"Potion":"minecraft:water"}
+    }
+    ],
+    "result":{
+      "item":"ssspcore:ferric_acid"
+    }
+}

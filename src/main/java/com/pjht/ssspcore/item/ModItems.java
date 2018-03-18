@@ -21,6 +21,16 @@ public class ModItems {
 		registerItem("housing");
 		registerItem("blank_pcb");
 		registerItem("blank_pcb_blueprint");
+		registerItem("phosphoric_acid");
+		registerItem("salt");
+		registerItem("boron");
+		registerItem("brine_bucket");
+		registerItem("hydrogen_bottle");
+		registerItem("clorine_bottle");
+		registerItem("hydrocloric_acid");
+		registerItem("boric_acid");
+		registerItem("ferric_acid");
+		//NEXT ITEM HERE
 	}
 	
 	public static void register(IForgeRegistry<Item> registry) {

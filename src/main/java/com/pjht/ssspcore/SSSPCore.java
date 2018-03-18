@@ -5,6 +5,7 @@ import com.pjht.ssspcore.item.ModItems;
 import com.pjht.ssspcore.proxy.CommonProxy;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -14,7 +15,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = SSSPCore.modId, name = SSSPCore.name, version = SSSPCore.version)
 public class SSSPCore {
@@ -47,7 +47,7 @@ public class SSSPCore {
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-
+		Items.WATER_BUCKET.setContainerItem(null);
 	}
 
 	@Mod.EventBusSubscriber
