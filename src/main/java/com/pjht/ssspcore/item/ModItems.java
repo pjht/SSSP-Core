@@ -24,7 +24,6 @@ public class ModItems {
 		registerItem("phosphoric_acid");
 		registerItem("salt");
 		registerItem("boron");
-		registerItem("brine_bucket");
 		registerItem("hydrogen_bottle");
 		registerItem("clorine_bottle");
 		registerItem("hydrocloric_acid");

@@ -47,7 +47,6 @@ public class SSSPCore {
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-		Items.WATER_BUCKET.setContainerItem(null);
 	}
 
 	@Mod.EventBusSubscriber
