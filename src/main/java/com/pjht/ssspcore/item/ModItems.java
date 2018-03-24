@@ -21,14 +21,14 @@ public class ModItems {
 		registerItem("housing");
 		registerItem("blank_pcb");
 		registerItem("blank_pcb_blueprint");
-		registerItem("phosphoric_acid");
+		registerBottle("phosphoric_acid");
 		registerItem("salt");
 		registerItem("boron");
-		registerItem("hydrogen_bottle");
-		registerItem("clorine_bottle");
-		registerItem("hydrocloric_acid");
+		registerBottle("hydrogen_bottle");
+		registerBottle("clorine_bottle");
+		registerBottle("hydrocloric_acid");
 		registerItem("boric_acid");
-		registerItem("ferric_acid");
+		registerBottle("ferric_acid");
 		//NEXT ITEM HERE
 	}
 	
@@ -55,7 +55,10 @@ public class ModItems {
 	private static void registerFuel(String name, String fuelName, int burnTime) {
 		items.put(name, new ItemFuel(name, fuelName, burnTime));
 	}
-
+	
+	private static void registerBottle(String name) {
+		items.put(name, new ItemBottle(name));
+	}
 	public static void initOreDict() {
 		for (ItemBase item: items.values()) {
 			if (item.isOredict()) {
