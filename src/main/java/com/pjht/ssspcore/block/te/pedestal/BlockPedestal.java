@@ -2,6 +2,7 @@ package com.pjht.ssspcore.block.te.pedestal;
 
 import javax.annotation.Nullable;
 
+import com.pjht.ssspcore.ModGuiHandler;
 import com.pjht.ssspcore.SSSPCore;
 import com.pjht.ssspcore.block.te.BlockTileEntity;
 
@@ -13,7 +14,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -60,13 +60,7 @@ public class BlockPedestal extends BlockTileEntity<TileEntityPedestal>{
 				}
 				tile.markDirty();
 			} else {
-				ItemStack stack = itemHandler.getStackInSlot(0);
-				if (!stack.isEmpty()) {
-					String localized = SSSPCore.proxy.localize(stack.getUnlocalizedName() + ".name");
-					player.sendMessage(new TextComponentString(stack.getCount() + "x " + localized));
-				} else {
-					player.sendMessage(new TextComponentString("Empty"));
-				}
+                player.openGui(SSSPCore.instance, ModGuiHandler.PEDESTAL, world, pos.getX(), pos.getY(), pos.getZ());
 			}
 		}
 		return true;

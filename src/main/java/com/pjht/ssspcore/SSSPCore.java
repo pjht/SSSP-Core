@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 @Mod(modid = SSSPCore.modId, name = SSSPCore.name, version = SSSPCore.version)
 public class SSSPCore {
@@ -35,6 +36,7 @@ public class SSSPCore {
 		System.out.println(name + " is loading!");
 		ModItems.init();
 		ModBlocks.init();
+		ModGuiHandler.init();
 	}
 	
 
