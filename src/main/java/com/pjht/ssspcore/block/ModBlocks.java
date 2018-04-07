@@ -19,6 +19,10 @@ public class ModBlocks {
 	public static void init() {
 		registerOre("ore_copper","oreCopper");
 		registerTileEntity("pedestal", new BlockPedestal());
+		registerOre("salt_ore","saltOre");
+		//NEXT BLOCK HERE
+		//NEXT BLOCK HERE
+		//NEXT BLOCK HERE
 	}
 	
 	public static void register(IForgeRegistry<Block> registry) {
